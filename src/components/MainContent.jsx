@@ -7,9 +7,9 @@ import { styled } from '@mui/material/styles';
 
 const StyledIconButton = styled(IconButton)({
   color: '#fff',
-  backgroundColor: '#000', // Uniform black background
+  backgroundColor: '#000',
   '&:hover': {
-    backgroundColor: '#333' // Slightly lighter black on hover
+    backgroundColor: '#333'
   },
   margin: '0 5px',
 });
