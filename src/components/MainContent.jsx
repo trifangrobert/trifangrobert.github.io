@@ -47,8 +47,8 @@ const MainContent = () => {
       <section>
         <h3>Education</h3>
         <ul>
-          <li><strong>University of Bucharest</strong> - Master's Degree in Artificial Intelligence (2024-2025)</li>
-          <li><strong>University of Bucharest</strong> - Bachelor's Degree in Computer Science (2020-2024)</li>
+          <li><strong>University of Bucharest</strong> - Master's Degree in Artificial Intelligence (2024-2026)</li>
+          <li><strong>University of Bucharest</strong> - Bachelor's Degree in Computer Science (2021-2024)</li>
         </ul>
       </section>
       <section>
