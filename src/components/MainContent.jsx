@@ -54,9 +54,10 @@ const MainContent = () => {
       <section>
         <h3>Work Experience</h3>
         <ul>
-          <li><strong>QuantCo</strong> - Software Engineer Intern (2023-2024)</li>
-          <li><strong>UiPath</strong> - Machine Learning Intern (2022-2023)</li>
-          <li><strong>Huawei</strong> - Software Engineer Intern (2021-2022)</li>
+          <li><strong>Databricks</strong> - (Incoming) Software Engineer Intern (2025)</li>
+          <li><strong>QuantCo</strong> - Software Engineer Intern (2024)</li>
+          <li><strong>UiPath</strong> - Machine Learning Intern (2023)</li>
+          <li><strong>Huawei</strong> - Software Engineer Intern (2022)</li>
         </ul>
       </section>
     </div>
