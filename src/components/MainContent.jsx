@@ -37,6 +37,33 @@ const PROJECTS = [
   }
 ]
 
+const WORK_EXPERIENCE = [
+  {
+    company: "Databricks",
+    role: "Software Engineer Intern",
+    year: "Summer 2025",
+    location: "Amsterdam, Netherlands"
+  },
+  {
+    company: "QuantCo",
+    role: "Software Engineer Intern",
+    year: "Summer 2024",
+    location: "Berlin, Germany"
+  },
+  {
+    company: "UiPath",
+    role: "Machine Learning Intern",
+    year: "Summer 2023",
+    location: "Bucharest, Romania"
+  },
+  {
+    company: "Huawei",
+    role: "Software Engineer Intern",
+    year: "Summer 2022",
+    location: "Tampere, Finland"
+  }
+]
+
 const MainContent = () => {
   return (
     <div>
@@ -83,10 +110,11 @@ const MainContent = () => {
       <section>
         <h3>Work Experience</h3>
         <ul>
-          <li><strong>Databricks</strong> - Software Engineer Intern (2025)</li>
-          <li><strong>QuantCo</strong> - Software Engineer Intern (2024)</li>
-          <li><strong>UiPath</strong> - Machine Learning Intern (2023)</li>
-          <li><strong>Huawei</strong> - Software Engineer Intern (2022)</li>
+          {WORK_EXPERIENCE.map((job) => (
+            <li key={job.company}>
+              <strong>{job.company}</strong> - {job.role} ({job.year}) • {job.location}
+            </li>
+          ))}
         </ul>
       </section>
     </div>
