@@ -26,6 +26,11 @@ const PROJECTS = [
     link: "/docs/better-call-lora.pdf"
   },
   {
+    title: "RAG for Reserach Papers",
+    description: "Retrieval Augmented Generation variants for Research Papers QA",
+    link: "/docs/rag.pdf"
+  },
+  {
     title: "Extended Isolation Forest",
     description: "Exploring the limits of Isolation Forest for Anomaly Detection",
     link: "/docs/eif.pdf"
