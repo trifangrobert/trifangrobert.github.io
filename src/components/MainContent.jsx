@@ -14,6 +14,24 @@ const StyledIconButton = styled(IconButton)({
   margin: '0 5px',
 });
 
+const PROJECTS = [
+  {
+    title: "BERT XAI",
+    description: "Hierarchical Linguistic Knowledge in BERT. A Layer-wise Probing Analysis",
+    link: "/docs/bert-pipeline.pdf"
+  },
+  {
+    title: "Better Call Lora",
+    description: "Low Rank Adaptation on a fixed VRAM budget",
+    link: "/docs/better-call-lora.pdf"
+  },
+  {
+    title: "Extended Isolation Forest",
+    description: "Exploring the limits of Isolation Forest for Anomaly Detection",
+    link: "/docs/eif.pdf"
+  }
+]
+
 const MainContent = () => {
   return (
     <div>
@@ -42,7 +60,13 @@ const MainContent = () => {
       </section>
       <section>
         <h3>Projects</h3>
-        <p>Most of my projects are on github, so feel free to check them out!</p>
+        <ul>
+          {PROJECTS.map((project) => (
+            <li key={project.title}>
+              <a href={project.link} target="_blank" rel="noopener noreferrer">{project.title}</a> - {project.description}
+            </li>
+          ))}
+        </ul>
       </section>
       <section>
         <h3>Education</h3>
