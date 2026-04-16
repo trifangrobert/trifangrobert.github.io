@@ -37,6 +37,36 @@ const PROJECTS = [
   }
 ]
 
+const COMPETITIONS = [
+  {
+    category: "Hackathon",
+    results: [
+      { year: "2026", description: "1st place — LSEG Quant Challenge" }
+    ]
+  },
+  {
+    category: "Physics Olympiad",
+    results: [
+      { year: "2017", description: "Gold medal — Regional Stage" },
+      { year: "2017", description: "Bronze medal — National Stage" },
+      { year: "2016", description: "Silver medal — National Stage" }
+    ]
+  },
+  {
+    category: "Competitive Programming",
+    results: [
+      { year: "2022", description: "Qualified to National Stage — ACM ICPC" },
+      { year: "2017-2021", description: "Qualified to National Stage (yearly)" }
+    ]
+  },
+  {
+    category: "Mathematics Olympiad",
+    results: [
+      { year: "2021", description: "Qualified to National Stage" }
+    ]
+  }
+]
+
 const WORK_EXPERIENCE = [
   {
     company: "Databricks",
@@ -117,6 +147,20 @@ const MainContent = () => {
           ))}
         </ul>
       </section>
+      <section>
+        <h3>Competitions & Awards</h3>
+        {COMPETITIONS.map((comp) => (
+          <div key={comp.category}>
+            <strong>{comp.category}</strong>
+            <ul>
+              {comp.results.map((r) => (
+                <li key={r.year + r.description}>{r.year} — {r.description}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </section>
+
     </div>
   );
 }
