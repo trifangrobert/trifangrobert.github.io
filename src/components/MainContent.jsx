@@ -69,6 +69,12 @@ const COMPETITIONS = [
 
 const WORK_EXPERIENCE = [
   {
+  company: "Google",
+    role: "Software Engineer Intern",
+    year: "Summer 2026",
+    location: "Paris, France"
+  },
+  {
     company: "Databricks",
     role: "Software Engineer Intern",
     year: "Summer 2025",
@@ -114,7 +120,7 @@ const MainContent = () => {
       <section>
         <h3>About Me</h3>
         <p>
-          I'm currently pursuing a Master's Degree in Artificial Intelligence at the University of Bucharest.
+          I'm currently a software engineering intern at Google, part of YouTube, working on improving costs/metrics for Video Understanding.
         </p>
         <p>
           I like playing around with tools and understanding how they work under the hood, especially in fields like machine learning and software engineering.
